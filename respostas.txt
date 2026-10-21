@@ -1,0 +1,7 @@
+1. Por que foi necessário adicionar espaço extra no topo do <main>? O que aconteceria sem esse ajuste? 
+2. Qual é a diferença entre usar position: fixed na barra e position: absolute? O que mudaria no comportamento ao rolar a página? 
+3. Se você remover o box-sizing: border-box, o que acontece com a largura da .barra-topo ao adicionar padding? Explique com base na fórmula de largura total do Box Model.
+
+1.  foi necessário adicionar espaço extra no topo do <main> porque a barra de navegação usa position: fixed, o que a faz flutuar sobre a página; sem esse ajuste, o conteúdo ficaria escondido debaixo dela.
+2.  a diferença ao rolar a página é que o position: fixed mantém a barra grudada na tela o tempo todo, enquanto o position: absolute faz a barra subir e sumir junto com o resto do conteúdo
+3.  sem o box-sizing: border-box, o padding é somado aos 100% de largura da barra, fazendo com que ela ultrapasse o tamanho da tela e crie uma barra de rolagem horizontal indesejada

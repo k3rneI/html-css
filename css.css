@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+}
+.barra-topo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #2c3e50;
+    padding: 12px 20px;
+    z-index: 1000;
+}
+.barra-topo ul {
+    list-style: none;
+}
+
+.barra-topo li {
+    float: left;
+}
+
+.barra-topo a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 6px 15px;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+.barra-topo a:hover {
+    color: #3498db;
+}
+
+.barra-topo ul::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.aviso {
+    position: relative;
+    background-color: #e74c3c;
+    color: #ffffff;
+    padding: 12px 40px 12px 20px;
+}
+
+#fechar-aviso {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#fechar-aviso:hover {
+    color: #f1c40f;
+}
+
+.mensagem {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+main p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+main {
+    margin-top: 95px;
+    padding: 30px;
+}
+
+main h1 {
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
